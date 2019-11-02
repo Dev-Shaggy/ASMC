@@ -1,0 +1,51 @@
+Funkcje
+- Ogólne
+    - Logowanie wszystkich zmian
+    - Możliwośc archiwizacji logów
+
+- Admin
+    - Zarządzanie bazą danych z poziomu aplikacji (CRUD)
+- Teacher
+    - Dodawanie oceny tylko na przedmiocie którego dotyczy
+    - Uwagi tylko na lekcji której dotyczy
+    - Lista obecności
+        - Widok własnej klasy
+            - Możliwość usprawiedliwienia
+        - Widok obecnej klasy
+            - Wstawienie spóźnienia/nieobecnosci
+            - cofnięcie pomyłki
+    - Wiadomość do
+        - wychowawcy/dyrektora
+        - ucznia (własnego)
+        - (dla wychowawcy) rodzica/opiekuna
+    - Widok planu zajęć (własnych)
+    - planowanie sprawdzianów
+- Student
+    - Widok planu zajęć
+    - widok własnych ocen
+    - widok nie obecności
+    - wiadomość do nauczyciela (tylko powiązanego)
+    - widok wypożyczonych książek z biblioteki
+- Head
+    - Widok listy pracowników
+        - urlopy (akceptacja)
+        - wypłaty
+        - obecności
+    - widok uczniów
+    - Raporty (jesli ogarnę jak to robić)
+- Worker
+    - Widok czasu pracy
+    - Planowanie urlopu
+    - kontakt z pracownikami
+- Liblary
+    - lista książek
+    - wypożyczanie ksiażek
+- Opiekn
+    - Podgląd ocen ucznia
+    - kontakt z wychowawcą
+    - podgląd nieobecności
+    - informacje o zebraniach wycieczkach
+    - pogląd planu zajęć ucznia
+
+- Zaawansowane
+    - Algorytm ukłądania planu zajęć

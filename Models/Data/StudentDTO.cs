@@ -15,5 +15,6 @@ namespace AdvancedSchoolManagment.Models.Data
         public virtual ICollection<StudentParentDTO> Parents { get; set; }
         public virtual ClassDTO Class { get; set; } 
         public virtual ICollection<MarksDTO> Marks { get; set; }
+        public virtual ICollection<RebukeDTO> Rebukes { get; set; }
     }
 }

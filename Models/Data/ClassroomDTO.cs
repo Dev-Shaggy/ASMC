@@ -16,5 +16,7 @@ namespace AdvancedSchoolManagment.Models.Data
         public virtual TeacherDTO Teacher { get; set; }
         public string Name { get; set; }
         public virtual SubjectDTO Subject { get; set; }
+        public virtual ICollection<LessonDTO> Lessons { get; set; }
+
     }
 }

@@ -17,5 +17,7 @@ namespace AdvancedSchoolManagment.Models.Data
         [ForeignKey("ClassId")]
         public virtual ClassDTO Class { get; set; }
         public virtual ICollection<MarksDTO> Marks { get; set; }
+        public virtual ICollection<LessonDTO> Lessons { get; set; }
+
     }
 }

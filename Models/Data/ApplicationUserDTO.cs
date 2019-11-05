@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -24,5 +25,8 @@ namespace AdvancedSchoolManagment.Models.Data
         public Guid? WorkerId { get; set; }
         [ForeignKey("WorkerId")]
         public virtual WorkerDTO Worker { get; set; }
+
+        public virtual ICollection<MessageDTO> Sender { get; set; }
+        public virtual ICollection<MessageDTO> Receiver { get; set; }
     }
 }

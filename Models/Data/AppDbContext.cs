@@ -19,6 +19,10 @@ namespace AdvancedSchoolManagment.Models.Data
         public DbSet<SubjectTeacherDTO> SubjectTeacher { get; set; }
         public DbSet<MarkSchemaDTO> MarkSchema { get; set; }
         public DbSet<MarksDTO> Mark { get; set; }
+        public DbSet<LessonDTO> Lesson { get; set; }
+        public DbSet<LessonHoursDTO> LessonHour { get; set; }
+        public DbSet<AbsenceDTO> Absence { get; set; }
+        public DbSet<RebukeDTO> Rebuke { get; set; }
 
 
     }

@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AdvancedSchoolManagment.Models;
 using AdvancedSchoolManagment.Models.DbAccess;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AdvancedSchoolManagment.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -23,7 +25,7 @@ namespace AdvancedSchoolManagment.Controllers
 
         public IActionResult Index()
         {
-            var list = _student.get();
+            //var list = _student.get();
             return View();
         }
 

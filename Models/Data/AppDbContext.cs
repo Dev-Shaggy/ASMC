@@ -8,6 +8,10 @@ namespace AdvancedSchoolManagment.Models.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options){}
 
+        protected override void OnModelCreating(ModelBuilder builder){
+            base.OnModelCreating(builder);
+            // builder.Seed();
+        }
 
         public DbSet<StudentDTO> Student { get; set; }
         public DbSet<ParentDTO> Parent { get; set; }

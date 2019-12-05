@@ -66,7 +66,7 @@ namespace AdvancedSchoolManagment.Areas.Identity.Controllers
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Home",new {area = ""});
                 }
                 foreach (var error in result.Errors)
                 {
@@ -74,6 +74,14 @@ namespace AdvancedSchoolManagment.Areas.Identity.Controllers
                 }
             }
             return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Logout(){
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home",new {area = ""});
+        }
+        public IActionResult AccessDenied(){
+            return View();
         }
     }
 }
